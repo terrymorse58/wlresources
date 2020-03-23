@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="chat-message" transform="matrix(1,0,0,1,-2,-3)">
+        <path d="M24.5,5L7.5,5C5.581,5.002 4.002,6.581 4,8.5L4,19.5C4.002,21.419 5.581,22.998 7.5,23L9,23L9,26.5C8.949,27.301 9.401,28.055 10.133,28.386C10.344,28.474 10.57,28.519 10.798,28.519C11.357,28.502 11.886,28.263 12.268,27.854L17.121,23L24.5,23C26.419,22.998 27.998,21.419 28,19.5L28,8.5C27.998,6.581 26.419,5.002 24.5,5ZM25,19.5C24.997,19.773 24.773,19.997 24.5,20L15.879,20L12,23.879L12,20L7.5,20C7.227,19.997 7.003,19.773 7,19.5L7,8.5C7.003,8.227 7.227,8.003 7.5,8L24.5,8C24.773,8.003 24.997,8.227 25,8.5L25,19.5Z" style="fill:rgb(255,255,255);fill-rule:nonzero;"/>
+    </g>
+</svg>
