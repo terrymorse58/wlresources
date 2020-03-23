@@ -1,0 +1,475 @@
+/* to hide elements until Vue is ready */
+[v-cloak] {
+  display: none;
+}
+
+/* for the body tag */
+body.body-wl {
+  background-color: #fff;
+}
+
+/* make input placeholder text lighter */
+.form-control::placeholder {
+  color: #b0b0b0;
+  opacity: 1;
+}
+
+/* fixed header at top of screen */
+.wl-header {
+  /*background-color: #0056b3;*/
+  /*border-bottom: 1px solid #d0d0d0;*/
+  height: 50px;
+  /*color: #e6f2ff;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wl-header h4, .wl-header h5 {
+  margin: 0;
+}
+
+/* estimated wait times table */
+.div-times {
+  margin: 0 auto 1.5rem auto;
+  width:280px;
+  background-color: white;
+}
+.div-times > button {
+  width: 100%;
+  padding: 0.2rem 1rem;
+  border: none;
+  font-size: 1.1rem;
+}
+.div-times table {
+  width:100%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+div.list-wrapper-restaurant {
+  max-width: 800px;
+}
+div.list-wrapper-restaurant ol {
+  /* border-bottom: 1px solid #d8d8d8; */
+}
+.form-group {
+  margin-bottom: 0.5rem;
+}
+.col-form-label {
+  padding: 0 14px;
+}
+/* style for inputs */
+.input-wl {
+  border: 1px solid #aaa;
+}
+
+/* loader with spinner */
+.div-loader {
+  position: absolute;
+  z-index: 2000;
+  left: 24px;
+  top: 6px;
+}
+.div-loader img {
+  width: 36px;
+  height: 36px;
+}
+
+.div-header-icons {
+  position: absolute;
+  z-index: 2000;
+  right: 12px;
+  top: 0;
+  min-width: 60px;
+  padding: 12px 0 0 0;
+}
+.img-icon {
+  width: 24px;
+  height: 24px;
+  margin: 4px;
+}
+.div-header-icons span.icon-badge {
+  position: relative;
+  left: -16px;
+  top: -10px;
+  font-size: 11px;
+  font-weight: 100;
+  padding: 3px 6px 4px 6px;
+  border-radius: 100px;
+}
+.span-danger {
+  color: #dc3545;
+  background-color: #e6f2ff;
+  border-radius: 18px;
+}
+
+/* main customer status section */
+.main-status {
+  margin: 1rem 0;
+}
+
+/* status info text for customer */
+.status-info {
+  padding: 0.5rem 1rem;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+}
+.status-info p {
+  margin-bottom: 0.5rem;
+}
+.status-info  p:last-child {
+  margin-bottom: 0;
+}
+
+/* buttons on customer main view */
+.main-buttons {
+  margin-top: 18px; padding-bottom: 1rem;
+}
+
+/* hack to fix modal problem when modal is not a top-level element
+  ref: https://stackoverflow.com/questions/10636667/bootstrap-modal-appearing-under-background
+ */
+.modal-backdrop {
+  z-index: 1;
+  background-color: #888888;
+}
+/* make modal backdrop more transparent */
+.modal-backdrop.show {
+  opacity: 0.3;
+}
+
+/* body div */
+.div-body-wl {
+  margin: 4rem auto;
+  max-width: 800px;
+  /*background-color: #fff;*/
+}
+@media (max-width: 500px) {
+  .div-body-wl {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+/**
+  restaurant page: entry list
+ */
+
+.ol-restaurant {
+  list-style-type: none;
+  margin: 1rem 0 1rem 0;
+  padding: 0;
+  list-style-position: inside;
+}
+.ol-restaurant > li {
+  padding: 0 1rem;
+  background-color: rgba(0,0,0,0.05);
+}
+.ol-restaurant > li div.div-entry {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: calc(100% - 2rem);
+}
+.ol-restaurant > li:nth-child(odd) {
+  background-color: rgba(0,0,0,0.1);
+}
+.ol-restaurant > li.empty:nth-child(odd) {
+  background-color: rgba(0,0,0,0.1);
+}
+@media (prefers-color-scheme: dark) {
+  .ol-restaurant > li {
+    background-color: rgba(255,255,255,0.05);
+  }
+  .ol-restaurant > li div {
+    color: rgba(255,255,255,0.4);
+  }
+  .ol-restaurant > li:nth-child(odd) {
+    background-color: rgba(255,255,255,0.1);
+  }
+  .ol-restaurant > li.empty:nth-child(odd) {
+    background-color: rgba(255,255,255,0.1);
+  }
+}
+.ol-restaurant > li button {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0.3rem 0 0.3rem 1rem;
+  border: none;
+  float: right !important;
+}
+.ol-restaurant > li button:disabled,
+.ol-restaurant > li button.disabled {
+  opacity: 0.2;
+}
+
+/* an entry's line of buttons */
+.div-buttons-wl {
+  padding: 0 0 0 0.5rem;
+  min-height: 50px;
+}
+
+/* badge over a button */
+.ol-restaurant > li button > span.badge-btn {
+  position: absolute;
+  left: 1.5rem;
+  top: -0.3rem;
+  font-size: 10px;
+  font-weight: 100;
+  padding: 3px 6px 4px 6px;
+  border-radius: 100px;
+  border: 1px solid #f4f4f4;}
+
+
+.wl-input {
+  border: 1px solid #b0b0b0;
+}
+@media (prefers-color-scheme: dark) {
+  .wl-input {
+    background-color: transparent;
+    color: inherit;
+  }
+  #textarea-send:focus,
+  .form-control.wl-input:focus {
+    color: #fff;
+    background-color: #3a3f44;
+    border-color: #aaa;
+  }
+  #textarea-send::placeholder {
+    color: rgba(255,255,255,0.2);
+  }
+}
+
+.select-wl {
+  max-width: 12rem;
+}
+@media (prefers-color-scheme: dark) {
+  .select-wl {
+    opacity: 0.5;
+  }
+}
+
+/* footer fixed navbar - mimics an iOS app button bar */
+.wl-footer {
+  padding: 0.2rem 0 0 0;
+  height: 70px;
+  align-items: flex-start;
+}
+@media (prefers-color-scheme: dark) {
+  .wl-footer {
+    background-color: #444;
+  }
+}
+.wl-footer > div {
+  padding: 0;
+  max-width: 800px;
+}
+.btn-footer-nav {
+  margin: 0 0.5rem;
+  padding: 0 0.3rem 0.25rem 0.3rem;
+  line-height: 1;
+  min-width: 3.5rem;
+  font-size: 0.7rem;
+  border: none;
+}
+@media (prefers-color-scheme: dark) {
+  .btn.btn-primary.btn-sm.btn-footer-nav {
+    background-image: none;
+    /*opacity: 0.6;*/
+  }
+}
+/* a badge laid over a footer button */
+.btn-badge {
+  position: relative;
+  left: -38px;
+  top: -18px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 6px 4px 6px;
+  border-radius: 100px;
+}
+.btn-legend {
+  font-size: 0.7rem;
+}
+
+
+/* toggle-switch checkbox input
+  (ref: https://www.w3schools.com/howto/howto_css_switch.asp) */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+input:checked + .slider {
+  background-color: #28a745;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #28a745;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+
+input:disabled + .slider {
+  background-color: #eaecef;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* gray link */
+.btn-link-gray {
+  color: #909090;
+}
+/* toggle-switch checkbox input END */
+
+/* "go back" button - a chevron-left */
+.btn-back {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.1rem;
+}
+.btn-back img {
+  height: 24px;
+}
+.btn-back:hover {
+  opacity: 0.7;
+}
+@media (prefers-color-scheme: dark) {
+  .btn.btn-link.btn-back {
+    border: none;
+  }
+}
+
+/* modal at bottom of screen */
+.modal.fade .modal-dialog.wl-modal-bottom {
+  position: fixed;
+  bottom: 100px;
+  width: 350px;
+  margin: 0;
+  left: calc(50% - 175px);
+  background-color: #ddd;
+  border-radius: 4px;
+  padding: 1rem 0 0.3rem 0;
+  transform: none;
+}
+@media (max-width: 500px) {
+  .modal.fade .modal-dialog.wl-modal-bottom {
+    width: 100%;
+    left: 0;
+    padding: 1rem 1rem 0.3rem 1rem;
+  }
+}
+
+/* landing screen */
+.div-landing {
+  height: 100vh;
+  background-color: #0056b3;
+  margin: 0;
+  padding: 1rem 0 2rem 0;
+  border: none;
+  border-radius: 0;
+  text-align: center !important;
+  color: rgba(255,255,255,0.95);
+}
+/* trademark on landing screen */
+.tm-landing {
+  font-size: 40%;
+  position: relative;
+  bottom: 1.4rem;
+}
+.hr-landing {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* trademark in header */
+.tm-header {
+  font-size: 50%;
+  font-weight: 100;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+/* age of entry on restaurant edit screen */
+.div-creation-time {
+  bottom: 6rem;
+  color: #a0a0a0;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+#div-home {
+  margin: 70px auto 100px auto;
+}
+
+/* hide and adjust some objects on small screens */
+@media (max-width: 400px) {
+  #header-home {
+    display: none;
+  }
+  #div-home {
+    margin: 0.5rem auto 5rem auto;
+  }
+}
+@media (max-height: 400px) {
+  #header-home,
+  #li-empty {
+    display: none;
+  }
+  #div-home {
+    margin: 1rem auto 5rem auto;
+  }
+  .btn-legend {
+    display: none;
+  }
+}
+
+/* disable hover effects on non-hover devices */
+@media (hover:none) {
+  .btn-outline-secondary:hover {
+  }
+  /* add button active (click) effect */
+  .btn-outline-secondary:not(:disabled):not(.disabled).active {
+  }
+}

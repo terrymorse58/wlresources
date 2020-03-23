@@ -1,0 +1,130 @@
+/* simulated phone texting styles */
+
+.header-simphone {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #d0d0d0;
+}
+.header-simphone h4 {
+  padding-top: 14px;
+}
+.container-simphone {
+  padding: 0 0.5rem;
+  max-width: 650px;
+  min-height: 80px;
+  margin: 3.5rem auto 6rem auto
+}
+ul.ul-simphone {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 12px 12px 18px 12px;
+}
+li.msg-in {
+  float:left;
+  clear:both;
+  max-width: 110%;
+  word-break: normal;
+  margin: 0.3rem 0;
+  padding: 0.3rem 0.75rem;
+  background-color: #e6e5ea;
+  color: #000;
+  border-radius: 1rem;
+}
+@media (prefers-color-scheme: dark) {
+  li.msg-in {
+    background-color: #555455;
+    color: #fff;
+  }
+}
+li.msg-out {
+  float:right;
+  clear:both;
+  max-width: 80%;
+  word-break: normal;
+  margin: 0.3rem 0;
+  padding: 0.3rem 0.75rem;
+  background-color: #28a745;
+  color: white;
+  border-radius: 1rem;
+}
+
+.bubble-right {
+  position: relative;
+  background: #28a745;
+  border-radius: .4em;
+}
+
+.bubble-right:after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 60%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: #28a745;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-right: -20px;
+}
+
+.bubble-left {
+  position: relative;
+  background: #e6e5ea;
+  border-radius: .4em;
+}
+
+.bubble-left:after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 60%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #e6e5ea;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+@media (prefers-color-scheme: dark) {
+  .bubble-left {
+    background: #555455;
+  }
+  .bubble-left:after {
+    border-right-color: #555455;
+  }
+}
+#footer-chat {
+  border: none;
+}
+footer.footer-simphone {
+  background-color: rgba(255,255,255,0.9);  /* slightly transparent white */
+}
+div.footer-simphone {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 0 22px 0;
+}
+#textarea-send {
+  width: 100%;
+  padding: 10px 3rem 10px 10px;
+  border-radius: 0.75rem;
+  border-color: rgba(128,128,128,0.5);
+  background-color: transparent;
+}
+.btn-textsend {
+  position: absolute;
+  right: 1.4rem;
+  top: 0.8rem;
+  width:2.5rem;
+  height:2.5rem;
+  border-radius:1.25rem;
+  padding:0;
+  margin: 0;
+}
+.btn-textsend img {
+  height: 30px;
+}
