@@ -1,11 +1,16 @@
 {
   "name": "wlresources",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "resources files for restaurant waitlist",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/terrymorse58/wlresources.git"
+  },
+
   "author": "Terry Morse",
   "license": "UNLICENSED"
 }
