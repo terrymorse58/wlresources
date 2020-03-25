@@ -1,6 +1,6 @@
 {
   "name": "wlresources",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "resources files for restaurant waitlist",
   "main": "index.js",
   "scripts": {
