@@ -94,7 +94,9 @@ const Localize = (function () {
     cancel: 'Cancel',
     sendTableReady: 'Send table is ready message',
     pleaseLogin: 'please login',
-    loggedOut: 'You have logged out'
+    loggedOut: 'You have logged out',
+    email: 'Email',
+    login: 'Login'
   };
 
   let spanishStrings = {
@@ -187,7 +189,10 @@ const Localize = (function () {
     cancel: 'Cancelar',
     sendTableReady: 'Enviar mensaje de mesa es listo',
     pleaseLogin: 'por favor Iniciar sesión',
-    loggedOut: 'Has cerrado la sesión'
+    loggedOut: 'Has cerrado la sesión',
+    email: 'Correo electrónico',
+    login: 'Iniciar sesión'
+
   };
 
   let languageStrings = {
