@@ -525,7 +525,8 @@ const WlClient = (function () {
     if (entryId) { hashString += ',' + entryId; }
     if (history.replaceState) {
       history.replaceState(null, null, hashString);
-    } else if (location) {
+    }
+    if (location) {
       location.hash = hashString;
     }
   }
