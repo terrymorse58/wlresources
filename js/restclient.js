@@ -54,6 +54,27 @@ const RestClient = (function () {
   }
 
   /**
+   * POST request that returns a promise
+   * @param url
+   * @param data
+   * @param [basicAuth]
+   * @param [timeout]
+   * @return {Promise<*>}
+   */
+  function postPromise( url, data, basicAuth, timeout) {
+    console.log('restclient.js postPromise url:',url);
+    return new Promise( function (resolve, reject) {
+      post(url, data, resultSuccess => {
+        // console.log('restclient.js getPromise.get success, resultSuccess:',resultSuccess);
+        resolve(resultSuccess);
+      }, err => {
+        console.log('restclient.js postPromise.post err:', err);
+        reject(err);
+      }, basicAuth, timeout);
+    })
+  }
+
+  /**
    *
    * @param {string} method - 'GET','HEAD','POST','PUT','DELETE','PATCH'
    * @param {object} data
@@ -196,13 +217,14 @@ const RestClient = (function () {
   }
 
   return {
-    get: get,
-    getPromise: getPromise,
-    head: head,
-    post: post,
-    put: put,
-    del: del,
-    patch: patch
+    get,
+    getPromise,
+    head,
+    post,
+    postPromise,
+    put,
+    del,
+    patch
   }
 
 })();

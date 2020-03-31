@@ -75,7 +75,7 @@ const Localize = (function () {
     to: 'to',
     keepLabel: 'Keep',
     dontChange: 'Don\'t Change',
-    okay: 'Okay',
+    okay: 'OK',
     posNames: ['zeroth','first','second','third','fourth','fifth','sixth','seventh','eighth','ninth'],
     nth: 'th',
     yourTableIsReady: 'Your table is ready',
